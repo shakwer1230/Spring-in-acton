@@ -10,7 +10,21 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Chapter-One</module>
+        <module>Chapter-Two</module>
     </modules>
 
 
+
+
+
+    <properties>
+        <java.version>1.8</java.version>
+        <marmockito.version>1.10.18</marmockito.version>
+        <junit.version>4.12</junit.version>
+        <spring.context.version>5.1.0.RELEASE</spring.context.version>
+        <commons.logging.version>1.2</commons.logging.version>
+        <aspectjweaver.version>1.9.0</aspectjweaver.version>
+        <spring.test.version>5.1.0.RELEASE</spring.test.version>
+        <log4j.version>1.2.17</log4j.version>
+    </properties>
 </project>
