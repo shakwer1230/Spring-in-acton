@@ -10,12 +10,11 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Chapter-One</module>
-        <module>Chapter-Two</module>
+        <module>Chapter-Two/stereo-autoConfig</module>
+        <module>Chapter-Two/stereo-xmlConfig</module>
+        <module>Chapter-Two/stereo-javaConfig</module>
+        <module>Chapter-Two/stereo-mixedConfig</module>
     </modules>
-
-
-
-
 
     <properties>
         <java.version>1.8</java.version>
