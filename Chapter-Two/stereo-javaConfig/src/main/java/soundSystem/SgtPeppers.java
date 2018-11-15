@@ -1,5 +1,6 @@
 package soundSystem;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 /**
@@ -8,12 +9,11 @@ import org.springframework.stereotype.Component;
  * @Date: 2018/11/14
  * @
  */
-@Component   //@component註解表明該類為作為組件類
 public class SgtPeppers implements CompactDisc {
     private  String title="Sgt. Pepper's Lonely Hearts Club Band";
-    private String artist="The beatles";
+    private String artist="The Beatles";
 
     public void play() {
-        System.out.println("Playing "+ title+" by"+ artist);
+        System.out.print("Playing "+ title+" by "+ artist);
     }
 }

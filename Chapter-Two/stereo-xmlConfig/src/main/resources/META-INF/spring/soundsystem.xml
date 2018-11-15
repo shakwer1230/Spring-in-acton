@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--<context:component-scan base-package="soundSystem" />-->
+<bean id="compactDisc" class="soundSystem.SgtPeppers"></bean>
+    <!--<bean id="compactDisc" class="soundSystem.CompactDisc"/>-->
+    <bean id="mediaPlayer" class="soundSystem.MediaPlayer"></bean>
+    <bean id="cdPlayer" class="soundSystem.CDPlayer">
+        <!--<constructor-arg ref="compactDisc"/>-->
+        <property name="compactDisc" ref="compactDisc"/>
+    </bean>
+    <bean id="compactDisc" class="soundSystem.BlankDisc">
+        <constructor-arg value="gt. Pepper's Lonely Hearts Club Band"/>
+        <constructor-arg value="The Beatles"/>
+    </bean>
+    <bean id="compactDiscs" class="soundSystem.collections.BlankDisc">
+        <!--第一种方式传值null-->
+        <!--<constructor-arg value="gt. Pepper's Lonely Hearts Club Band"/>-->
+        <!--<constructor-arg value="The Beatles"/>-->
+        <!--<constructor-arg><null></null></constructor-arg>-->
+
+        <!--使用list元素-->
+        <constructor-arg value="Sgt. Pepper's Lonely Hearts Club Band"/>
+        <constructor-arg value="The Beatles"/>
+        <constructor-arg>
+            <list><!--也可以使用set元素替代-->
+                <value>Sgt. Pepper's Lonely Hearts Club Band</value>
+                <value>With a Little Help from My Friends</value>
+                <value>Lucy in the Sky with Diamonds</value>
+                <value>Getting Better</value>
+            </list>
+        </constructor-arg>
+
+    </bean>
+
+</beans>
