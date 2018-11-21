@@ -18,6 +18,7 @@
         <module>Chapter-Three/conditional</module>
         <module>Chapter-Three/external</module>
         <module>Chapter-Three/scopedbean</module>
+        <module>Chapter-Four</module>
     </modules>
 
     <properties>
