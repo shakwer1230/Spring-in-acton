@@ -19,6 +19,7 @@
         <module>Chapter-Three/external</module>
         <module>Chapter-Three/scopedbean</module>
         <module>Chapter-Four</module>
+        <module>Chapter-Five</module>
     </modules>
 
     <properties>
@@ -29,6 +30,8 @@
         <commons.logging.version>1.2</commons.logging.version>
         <aspectjweaver.version>1.9.0</aspectjweaver.version>
         <spring.test.version>5.1.0.RELEASE</spring.test.version>
+        <spring.web.version>5.1.0.RELEASE</spring.web.version>
+        <spring.webmvc.version>5.1.0.RELEASE</spring.webmvc.version>
         <spring.jdbc.version>5.1.0.RELEASE</spring.jdbc.version>
         <log4j.version>1.2.17</log4j.version>
     </properties>
