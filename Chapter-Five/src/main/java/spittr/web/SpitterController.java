@@ -18,6 +18,8 @@ import spittr.data.SpitterRepository;
 @RequestMapping("/spitter")
 public class SpitterController {
 
+
+
   private SpitterRepository spitterRepository;
 
   @Autowired
